@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--declaramos el idioma que tendrá nuestro sitio -->
+	<meta charset="utf-8"> 
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!--este es el título de nuestro sitio, que aparece en la pestaña del browser-->
+	<title>Administrador</title>  
+
+	<!--llamamos la hoja de estilos llamada style.css-->
+	<link rel="stylesheet" href="style.css">
+
+	<!--llamamos la ruta para los iconos que usaremos-->
+	<link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css">
+	
+
+</head>
+<body>
+
+<!--La etiqueta <header></header>, indica a los navegadores el contenido de la cabecera de la página, este contenido puede ser un menú de navegación, un Isologotipo, alguna frase, un buscador, etc. En general en html5 la etiqueta header es la encargada de contener todo el contenido declarado como cabecera en un sitio. En nuestro caso hemos puesto una frase y una imagen (isologotipo) para este sector.
+
+ El estilo de esta etiqueta está controlado por el id="header" ubicado en la línea 98 de nuestro css-->
+
+<header id="header">
+	<h1 class="bienvenido">Bienvenid@</h1><img src="img/Logo.png" title="Taller Mecánico" class="logo" alt="Logo Taller Mecánico" /> <!--importante destacar que el title de la img cumple una funsión vital para la usabilidad del sitio, pues si no carga le indicará al usuario el nombre de la img-->
+</header><!-- /header -->
+	
+
+<div class="container"><!--contenedor que lo usaremos para declarar un espacio de 100%, en donde nos sirvirá para poder dividir la pantalla en dos-->
+
+
+<article>
+	<!-- nuestro menú de lista, en donde lo controlamos por la class "menu" en la línea 118, 122 y 133 de nuestro CSS-->
+<ul class="menu">
+<li><a href="admin.html" id="menu"><i class="fas fa-home"></i> Incio</a></li> <!-- los <i> más la class en estos casos son los llamados usados de los iconos que revisaremos el próximo viernes en el taller 42+1 --> 
+<li><a href="#" id="menu"><i class="fas fa-car"></i> Ingresar auto</a></li>
+<li><a href="#" id="menu"><i class="fas fa-search"></i> Buscar auto</a></li>
+<li><a href="#" id="menu"><i class="fas fa-edit"></i> Modificar Auto</a></li>
+<li><a href="#" id="menu"><i class="fas fa-trash-alt"></i> Eliminar Auto</a></li>
+</ul>	
+</article>
+
+
+
+<!-- importante para la navegación y usabilidad del sitio es usar el famoso "caminito de migas" para indicarle al usuario en donde está en el sitio web-->
+<aside>
+<div class="camino gris">Ud. está en <i class="fas fa-angle-double-right red"></i><a href="#">Home</a></div>
+<!--desde acá en adelante es donde iremos haciendo la parte dinámica del sitio-->
+<p>Bienevido al Administrador del taller </p>
+<!--hasta acá usaremos la parte dinámica del sitio-->
+</aside>
+
+
+</div>
+	
+</body>
+</html>
